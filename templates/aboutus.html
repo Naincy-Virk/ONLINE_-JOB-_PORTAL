@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="about-hero">
+  <div class="about-text">
+    <h1>Who We Are</h1>
+    <p>
+      JobPortal is a professional recruitment platform helping job seekers and companies connect efficiently.
+      We provide a secure, fast and easy-to-use solution for hiring and job searching.
+    </p>
+    <p>
+      Our goal is to simplify recruitment through technology and innovation.
+    </p>
+  </div>
+</section>
+
+
+<section class="about-section">
+  <h2>Our Mission</h2>
+  <p>
+    To bridge the gap between employers and applicants with modern technology,
+    providing opportunities for growth and career success.
+  </p>
+</section>
+
+
+<section class="about-section">
+  <h2>Our Vision</h2>
+  <p>
+    To be a trusted platform for recruitment where talent meets opportunity worldwide.
+  </p>
+</section>
+
+
+<h2 class="team-title">Leadership Team</h2>
+
+<div class="team-container">
+
+  <div class="team-card">
+    <img src="{{ url_for('static', filename='images/mrinal.jpg') }}">
+    <h3>Mrinal Largotra</h3>
+    <p>Founder & Lead Developer</p>
+  </div>
+
+  <div class="team-card">
+    <img src="{{ url_for('static', filename='images/naincy.jpg') }}">
+    <h3>Naincy Virk</h3>
+    <p>Design Manager</p>
+  </div>
+
+  <div class="team-card">
+    <img src="{{ url_for('static', filename='images/manish.jpg') }}">
+    <h3>Manish Kumar</h3>
+    <p>Technical Head</p>
+  </div>
+
+</div>
+
+
+{% endblock %}

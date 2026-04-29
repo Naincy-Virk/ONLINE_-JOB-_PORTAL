@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="center-form">
+    <div class="form-card">
+        <h2>Company Registration</h2>
+
+        <form method="POST" enctype="multipart/form-data">
+            <input type="text" name="name" placeholder="Contact Person Name" required>
+            <input type="text" name="company" placeholder="Company Name" required>
+            <input type="email" name="email" placeholder="Company Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+
+            <label>Upload Company Logo</label>
+            <input type="file" name="logo">
+
+            <button class="primary-btn">Register</button>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

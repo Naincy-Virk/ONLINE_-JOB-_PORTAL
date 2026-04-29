@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="center-form">
+    <div class="form-card">
+        <h2>User Registration</h2>
+
+        <form method="POST" enctype="multipart/form-data">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+
+            <label>Upload Resume:</label>
+            <input type="file" name="resume">
+
+            <label>Upload Profile Photo:</label>
+            <input type="file" name="photo">
+
+            <button class="primary-btn">Register</button>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

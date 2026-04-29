@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="center-form">
+  <div class="form-card large">
+    <h2>Contact Us</h2>
+
+    <form method="POST">
+
+      <input type="text" name="name" placeholder="Your Name" required>
+
+      <input type="email" name="email" placeholder="Your Email" required>
+
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+      <button type="submit" class="primary-btn">Send Message</button>
+
+    </form>
+  </div>
+</div>
+
+{% endblock %}

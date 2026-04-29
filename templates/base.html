@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title or "Job Portal" }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <span class="brand">JobPortal</span>
+    <a href="/">HOME</a>
+    <a href="/aboutus">ABOUT US</a>
+    <a href="/login">COMPANY LOGIN</a>
+    <a href="/register/user">JOB SEEKER REGISTRATION</a>
+    <a href="/contactus">CONTACT US</a>
+    <a href="/admin">ADMIN LOGIN</a>
+
+</nav>
+
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <p class='alert'>{{ messages[0] }}</p>
+  {% endif %}
+{% endwith %}
+
+{% block content %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2 class="dashboard-title">Contact Messages</h2>
+
+<div class="job-list">
+
+{% for msg in messages %}
+<div class="job-card">
+    <p><b>Name:</b> {{ msg.name }}</p>
+    <p><b>Email:</b> {{ msg.email }}</p>
+    <p><b>Message:</b> {{ msg.message }}</p>
+
+    <a href="/admin/delete/{{ msg.id }}" class="primary-btn small">
+        ❌ Delete
+    </a>
+</div>
+{% endfor %}
+
+</div>
+
+{% endblock %}

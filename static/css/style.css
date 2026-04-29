@@ -1,0 +1,280 @@
+body {
+    background: #1d1d1d;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background:#111;
+    padding:12px;
+}
+
+.navbar a {
+    color:white;
+    padding:10px 18px;
+    text-decoration:none;
+    font-size:15px;
+}
+
+.navbar a:hover {
+    color:#ff004c;
+}
+
+.brand {
+    font-size:25px;
+    font-weight:bold;
+    color:#ff004c;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top:50px;
+}
+
+.left-text {
+    width:55%;
+    padding:20px;
+}
+
+.left-text h1 {
+    font-size:40px;
+    border-bottom:3px solid #ff004c;
+    width:200px;
+    padding-bottom:5px;
+}
+
+.login-box {
+    background: #2b2b2b;
+    padding:30px;
+    border-radius:10px;
+    width:300px;
+    border:2px solid #444;
+}
+
+.login-box input {
+    width:100%;
+    padding:10px;
+    margin-bottom:15px;
+    border:none;
+    background:#ddd;
+    border-radius:5px;
+}
+
+.login-btn {
+    background:#ff004c;
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:5px;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.login-btn:hover {
+    opacity:0.8;
+}
+.center-form {
+    display:flex;
+    justify-content:center;
+    margin-top:60px;
+}
+
+.form-card {
+    background:#2b2b2b;
+    padding:30px;
+    width:350px;
+    border-radius:10px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.4);
+}
+
+.form-card.large { width:500px; }
+
+.form-card h2 {
+    color:#ff004c;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.form-card input,
+.form-card textarea {
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    background:#ddd;
+    border:none;
+    border-radius:5px;
+}
+
+.primary-btn {
+    width:100%;
+    background:#ff004c;
+    padding:12px;
+    border:none;
+    border-radius:5px;
+    font-weight:bold;
+    cursor:pointer;
+    color:white;
+}
+
+.primary-btn:hover {
+    opacity:0.8;
+}
+
+.job-list {
+    margin:30px;
+}
+
+.job-card {
+    background:#2b2b2b;
+    padding:20px;
+    margin-bottom:15px;
+    border-radius:10px;
+    border:1px solid #444;
+}
+
+.primary-btn.small {
+    width:auto;
+    padding:8px 20px;
+}
+
+/* About Page Professional Styling */
+
+.about-hero {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  padding: 60px;
+  text-align: left;
+}
+
+.about-text {
+  max-width: 700px;
+}
+
+.about-text h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #ff004c;
+}
+
+.about-section {
+  margin: 40px;
+}
+
+.about-section h2 {
+  color: #ff004c;
+}
+
+.about-section p {
+  max-width: 700px;
+  opacity: 0.9;
+}
+
+.team-title {
+  text-align: center;
+  color: #ff004c;
+  font-size: 32px;
+  margin-top: 60px;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px;
+}
+
+.team-card {
+  background: #2b2b2b;
+  padding: 20px;
+  width: 220px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.team-card img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.team-card img {
+    width:120px;
+    height:120px;
+    object-fit:cover;
+    border-radius:50%;
+    border:3px solid #ff004c;
+}
+/* ---------- HOME PAGE ---------- */
+
+.home-hero {
+  height: 80vh;
+  background: linear-gradient(to right, #141e30, #243b55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 46px;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  opacity: .8;
+  margin-bottom: 25px;
+}
+
+.hero-buttons a {
+  margin: 10px;
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 1px solid #ff004c;
+  padding: 10px 18px;
+  border-radius: 6px;
+  color: white;
+}
+
+/* Features Section */
+
+.features {
+  display: flex;
+  justify-content: center;
+  margin: 60px;
+  gap: 40px;
+}
+
+.feature-box {
+  background: #1f1f1f;
+  padding: 25px;
+  width: 250px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,.4);
+}
+
+.feature-box h3 {
+  color: #ff004c;
+}
+
+/* Latest Jobs */
+
+.section-title {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.latest-jobs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.job-logo {
+  max-width: 90px;
+  margin-bottom: 12px;
+}

@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="dashboard-title">Admin Dashboard</div>
+
+<div class="dashboard-container">
+
+  <div class="info-card">
+  <h3>Contact Messages</h3>
+  <a href="/admin/messages" class="primary-btn small">View</a>
+</div>
+
+
+  <div class="info-card">
+    <h3>Users</h3>
+    <a href="/admin/users" class="primary-btn small">View</a>
+  </div>
+
+  <div class="info-card">
+    <h3>Companies</h3>
+    <a href="/admin/employers" class="primary-btn small">View</a>
+  </div>
+
+  <div class="info-card">
+    <h3>Jobs</h3>
+    <a href="/admin/jobs" class="primary-btn small">Manage</a>
+  </div>
+
+  <div class="info-card">
+  <h3>Applications</h3>
+  <a href="/admin/applications" class="primary-btn small">View</a>
+</div>
+
+  <div class="info-card">
+    <h3>Logout</h3>
+    <a href="/admin/logout" class="primary-btn small">Exit</a>
+  </div>
+
+
+</div>
+
+{% endblock %}

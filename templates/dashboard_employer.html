@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Employer Dashboard</h2>
+
+<a href="{{ url_for('post_job') }}">+ Post New Job</a>
+
+<h3>Your Posted Jobs:</h3>
+
+<ul>
+{% for job in jobs %}
+    <li><strong>{{ job.title }}</strong> - {{ job.location }}</li>
+{% else %}
+    <li>No jobs posted yet.</li>
+{% endfor %}
+</ul>
+
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- HERO SECTION -->
+<section class="home-hero">
+  <div class="hero-text">
+    <h1>Find Your Dream Job Today</h1>
+    <p>Connecting Talent with Top Companies Worldwide</p>
+    <div class="hero-buttons">
+      <a href="/jobs" class="primary-btn">Browse Jobs</a>
+      <a href="/register/user" class="secondary-btn">Join Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURE SECTION -->
+<section class="features">
+  <div class="feature-box">
+    <h3>Verified Companies</h3>
+    <p>We verify employers to ensure genuine job listings.</p>
+  </div>
+  <div class="feature-box">
+    <h3>Easy Application</h3>
+    <p>Apply to jobs in just one click.</p>
+  </div>
+  <div class="feature-box">
+    <h3>Secure Profile</h3>
+    <p>Your resume is safe and private.</p>
+  </div>
+</section>
+
+<!-- LATEST JOBS -->
+<section class="job-list">
+<h2 class="section-title">Latest Jobs</h2>
+
+<div class="latest-jobs">
+
+{% for job in jobs[:6] %}
+<div class="job-card">
+
+  {% if job.logo %}
+    <img src="/{{ job.logo }}" class="job-logo">
+  {% endif %}
+
+  <h3>{{ job.title }}</h3>
+  <p>{{ job.company }}</p>
+  <p>{{ job.location }}</p>
+
+  <a href="/apply/{{ job.id }}" class="primary-btn small">View</a>
+</div>
+{% endfor %}
+
+</div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2 class="dashboard-title">All Companies</h2>
+
+<div class="job-list">
+{% for e in employers %}
+  <div class="job-card">
+    <p><b>Name:</b> {{ e.name }}</p>
+    <p><b>Company:</b> {{ e.company }}</p>
+    <p><b>Email:</b> {{ e.email }}</p>
+  </div>
+{% endfor %}
+</div>
+
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2 class="dashboard-title">Job Applications</h2>
+
+<div class="job-list">
+
+{% for app in applications %}
+<div class="job-card">
+    <p><b>Name:</b> {{ app.applicant_name }}</p>
+    <p><b>Email:</b> {{ app.applicant_email }}</p>
+    <p><b>Job:</b> {{ app.job_title }}</p>
+    <p><b>Company:</b> {{ app.company }}</p>
+</div>
+{% endfor %}
+
+</div>
+
+{% endblock %}

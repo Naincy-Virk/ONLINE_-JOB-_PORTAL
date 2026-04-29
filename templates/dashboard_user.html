@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Applicant Dashboard</h2>
+
+<p>Welcome!</p>
+
+<h3>Available Jobs:</h3>
+
+<ul>
+{% for job in jobs %}
+    <li>
+        <strong>{{ job.title }}</strong> - {{ job.company }} - {{ job.location }}
+        <a href="{{ url_for('apply', job_id=job.id) }}">Apply</a>
+    </li>
+{% endfor %}
+</ul>
+
+{% endblock %}

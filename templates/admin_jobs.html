@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2 class="dashboard-title">All Jobs</h2>
+
+<div class="job-list">
+
+{% for job in jobs %}
+<div class="job-card">
+  <p><b>Title:</b> {{ job.title }}</p>
+  <p><b>Company:</b> {{ job.company }}</p>
+  <p><b>Location:</b> {{ job.location }}</p>
+
+  <a href="/admin/delete_job/{{ job.id }}" class="primary-btn small">
+    ❌ Delete Job
+  </a>
+</div>
+{% endfor %}
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="center-form">
+<div class="form-card large">
+
+{% if job.logo %}
+<img src="/{{ job.logo }}" style="width:100px; margin-bottom:15px;">
+{% endif %}
+
+<h2>{{ job.title }}</h2>
+
+<p><b>Company:</b> {{ job.company }}</p>
+<p><b>Location:</b> {{ job.location }}</p>
+<p><b>Salary:</b> {{ job.salary or 'Not Disclosed' }}</p>
+<p><b>Job Type:</b> {{ job.job_type or 'Not Mentioned' }}</p>
+<p><b>Experience:</b> {{ job.experience or 'Not Mentioned' }}</p>
+<p><b>Deadline:</b> {{ job.deadline or 'Not Set' }}</p>
+<p><b>Posted On:</b> {{ job.posted_on }}</p>
+
+<hr>
+
+<h3>Job Description</h3>
+<p style="opacity:0.8;">{{ job.description }}</p>
+
+<form method="POST">
+    <button class="primary-btn">Apply Now</button>
+</form>
+
+</div>
+</div>
+
+{% endblock %}
