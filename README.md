@@ -26,3 +26,19 @@ This project was created to improve web development skills and build a simple jo
 
 ## HOMEPAGE
 ![Homepage](homepage.jpg)
+
+## ABOUT US PAGE
+![about us page](aboutus.jpg)
+
+
+## LOGIN PAGE
+![loginpage](login.png)
+
+## COMPANY REGISTRATION PAGE
+![company registration page](companyregistration.png)
+
+## USER REGISTRATION PAGE
+![user registration epage](userregistration.png)
+
+## JOB POSTING PAGE
+![ job posting page](jobposting.png)
