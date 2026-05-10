@@ -23,4 +23,6 @@ This is a responsive Online Job Portal Website developed using Python, HTML, CSS
 
 This project was created to improve web development skills and build a simple job portal platform for users and recruiters.
 
+
+## HOMEPAGE
 ![Homepage](homepage.jpg)
